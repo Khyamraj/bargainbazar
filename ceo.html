@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQYJP5T5GQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KQYJP5T5GQ');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO CV | Bargain Bazaar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <style>
+        /* Add custom styles for CEO CV */
+      
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Header start -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>BARGAIN <span>BAZAAR</span></h1>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About </a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="/images/cart.png" width="30px" height="30px" class="cart" onclick="toggleCart()">
+                <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <!-- Header end -->
+
+    <!-- CEO CV Section -->
+    <div class="cv-container">
+        <div class="cv-left">
+            <img src="/images/neekesh1.jpg" alt="CEO Photo">
+            <h2>Neekesh Adhikari</h2>
+            <p>CEO & Founder</p>
+            <p>Bargain Bazaar</p>
+        </div>
+        <div class="cv-right">
+            <div class="cv-details">
+                <h2>About Me</h2>
+                <p>As the CEO and Founder of Bargain Bazaar, I am passionate about revolutionizing the fashion industry
+                    by providing trendy and affordable fashion products to our valued customers. With a focus on quality,
+                    style, and customer satisfaction, I lead a team dedicated to delivering exceptional shopping
+                    experiences and exceeding expectations.</p>
+
+                <h2>Professional Experience</h2>
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Years</th>
+                    </tr>
+                    <tr>
+                        <td>Bargain Bazaar</td>
+                        <td>CEO & Founder</td>
+                        <td>2015 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ Fashion Retail</td>
+                        <td>Senior Manager</td>
+                        <td>2010 - 2015</td>
+                    </tr>
+                </table>
+
+                <h2>Education</h2>
+                <table>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Master of Business Administration (MBA)</td>
+                        <td>ABC University</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Business Studies (BBS)</td>
+                        <td>XYZ College</td>
+                        <td>2007</td>
+                    </tr>
+                </table>
+
+                <h2>Achievements</h2>
+                <ul>
+                    <li>Recipient of "Fashion Innovator of the Year" award in 2018</li>
+                    <li>Featured in "Business Today" magazine for successful entrepreneurship</li>
+                    <li>Led Bargain Bazaar to achieve a record-breaking sales growth of 300% in 2021</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- End of CEO CV Section -->
+
+   
+    <div class="scroll-to-top-btn" onclick="scrollToTop()" id="scrollToTopBtn">&#8679;</div>
+<!-- ----------foooter--------------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row1">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Dowload app for android and ios mobile phones</p>
+                <div class="app-logo">
+                    <img src="/images/play.png" >
+                    <img src="/images/appstore.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h3>Bargain <span>Bazaar</span> </h3>
+                <p>"Bargain Bazaar, your go-to ecommerce destination, <br> offers a wide array of products at unbeatable prices,<br> providing a delightful shopping experience for all."</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupens</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us:</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&#169; 2023 - Bargain Bazaar</p>
+    </div>
+</div>
+<!-- ------------js for menu ------------------ -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight = "0px";
+
+function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "400px";
+    }
+    else
+    {
+        MenuItems.style.maxHeight = "0px";
+    }
+}
+// Function to retrieve cart items from local storage
+function getCartFromLocalStorage() {
+  const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart'));
+  if (cartFromLocalStorage) {
+    cartItems.push(...cartFromLocalStorage);
+  }
+}
+
+// Function to save cart items to local storage
+function saveCartToLocalStorage() {
+  localStorage.setItem('cart', JSON.stringify(cartItems));
+}
+
+// Function to show the cart notification
+function showCartNotification() {
+  const cartNotification = document.getElementById('cartNotification');
+  cartNotification.style.display = 'block';
+
+  // Hide the notification after a few seconds (adjust the duration as needed)
+  setTimeout(function() {
+    cartNotification.style.display = 'none';
+  }, 1000); // 3000 milliseconds = 3 seconds
+}
+
+// Function to add the item to the cart
+function addToCart(productName, price, quantity) {
+  const existingItem = cartItems.find(item => item.name === productName);
+  if (existingItem) {
+    existingItem.quantity += quantity;
+  } else {
+    cartItems.push({
+      name: productName,
+      price: price,
+      quantity: quantity,
+    });
+  }
+  saveCartToLocalStorage();
+  showCartNotification();
+  // Update the cart display
+  displayCart();
+}
+
+// Function to remove an item from the cart
+function removeCartItem(productName) {
+  const itemIndex = cartItems.findIndex(item => item.name === productName);
+  if (itemIndex !== -1) {
+    cartItems.splice(itemIndex, 1);
+    saveCartToLocalStorage();
+    displayCart();
+  }
+}
+
+// Function to display the cart items and total value
+function displayCart() {
+  const cartList = document.getElementById('cart-items');
+  const totalValueElement = document.getElementById('totalValue');
+  cartList.innerHTML = '';
+  let totalValue = 0;
+
+  cartItems.forEach(item => {
+    const cartItem = document.createElement('li');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+      <span>${item.name} x ${item.quantity}</span>
+      <span>RS. ${item.price * item.quantity}</span>
+      <span class="cross-symbol" onclick="removeCartItem('${item.name}')">&#10006;</span>
+    `;
+
+    cartList.appendChild(cartItem);
+
+    totalValue += item.price * item.quantity;
+  });
+
+  totalValueElement.textContent = `RS. ${totalValue}`;
+}
+
+// Function to toggle the cart display
+function toggleCart() {
+  const cartWrapper = document.getElementById('cartWrapper');
+  cartWrapper.classList.toggle('show-cart');
+
+  // Update the cart display when the cart is shown
+  if (cartWrapper.classList.contains('show-cart')) {
+    displayCart();
+  }
+}
+
+function closeCart() {
+  const cartWrapper = document.getElementById('cartWrapper');
+  cartWrapper.classList.remove('show-cart');
+}
+
+// Initialize cart on page load
+const cartItems = [];
+document.addEventListener('DOMContentLoaded', () => {
+  getCartFromLocalStorage();
+  displayCart();
+});
+// Function to scroll to the top of the page
+function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Function to toggle the visibility of the scroll-to-top button
+        function toggleScrollToTopButton() {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 100) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        }
+
+        // Event listener to check scroll position and toggle button visibility
+        window.addEventListener('scroll', toggleScrollToTopButton);
+</script>
+
+</body>
+
+</html>

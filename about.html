@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQYJP5T5GQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KQYJP5T5GQ');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Bargain Bazaar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!--------------header start---------- -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>BARGAIN <span>BAZAAR</span></h1>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About </a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px" class="cart" onclick="toggleCart()">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <!------------------- End of header ------------------>
+
+    <!-- ------------------start of cart section------------------ -->
+    <!-- Cart section -->
+    <div class="cart-wrapper" id="cartWrapper">
+        <div class="cart-container" id="cartContainer">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <div class="cart-total">
+                <p>Total:</p>
+                <span id="totalValue">RS. 0</span>
+            </div>
+            <button class="btn btn-checkout">Checkout</button>
+            <button class="btn btn-close" onclick="closeCart()">Close</button> <!-- Add the close button -->
+        </div>
+    </div>
+    <div class="cart-notification" id="cartNotification">
+        Item added to cart!
+    </div>
+    <!-- 
+  ----------------------end of cart section------------------ -->
+
+    <!-- -------------- About Section -------------- -->
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>Welcome to our journey in the world of fashion! At <a href="index.html"><span>Bargain Bazaar</span></a>, we strive to provide you with the latest trends and fashion inspirations that not only make you look fabulous but also boost your confidence.</p>
+    
+          <div class="features">
+            <div class="feature-item">
+              <span class="feature-icon">🚀</span>
+              <h3 class="feature-title">Our Mission</h3>
+              <p class="feature-description">Our mission is to empower fashion enthusiasts by offering a wide range of stylish clothing and accessories that express their unique personalities and enhance their personal style.</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🎯</span>
+              <h3 class="feature-title">Our Vision</h3>
+              <p class="feature-description">Our vision is to become the go-to fashion destination for every individual seeking trendy and high-quality fashion products that cater to diverse styles and preferences.</p>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">💡</span>
+              <h3 class="feature-title">Our Values</h3>
+              <p class="feature-description">At <a href="index.html"><span>Bargain Bazaar</span></a>, we value creativity, inclusivity, and sustainability. We are committed to offering exceptional customer service and building a fashion community that inspires and supports each other.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Our Team Section -->
+    <div class="team-section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <a href="ceo.html">
+                      <img src="images/neekesh1.jpg" alt="Neekesh Adhikari"></a>
+                      <a href="ceo.html"><h3>Khyamraj Adhikari</h3></a>
+                      <a href="ceo.html"><p>CEO & Founder</p></a>
+                    
+                    
+                    </a>
+                </div>
+                <div class="team-member">
+                    <img src="images/IMG_20230704_221924.jpg" alt="Kshitiz Sharma">
+                    <h3>Salman Khan</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/mark.jpg" alt="Mark Zuckerberg">
+                    <h3>Mark Zuckerberg</h3>
+                    <p>Advisor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+  
+    <div class="testimonial">
+        <div class="container">
+            <div class="row1">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>"Neekesh Adhikari, CEO of Bargain Bazaar, has transformed the company into a major player in the retail industry. His visionary leadership and commitment to affordable quality products make Bargain Bazaar a top recommendation." </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/neekesh.jpg" >
+                    <h3>Elon Musk</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>""Neekesh Adhikari, the visionary CEO behind Bargain Bazaar, delivers exceptional value and quality. His leadership has transformed the retail industry, making Bargain Bazaar a top destination for unbeatable prices. Highly recommended."" </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/kshitiz.jpg" >
+                    <h3>Steve Jobs</h3>
+    
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>"Neekesh Adhikari, the driving force behind Bargain Bazaar, has redefined the retail industry. With a focus on value and quality, he has elevated Bargain Bazaar to new heights. A truly exceptional CEO leading the way to unmatched shopping experiences." </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/mark.jpg" >
+                    <h3>Mark Zuckerberg</h3>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brands Section -->
+    <!-- <div class="brands-section">
+        <div class="container">
+            <h2 style="text-align: center;">Our Trusted Brands</h2> -->
+            <div class="brands">
+                <div class="container">
+                    <div class="row1">
+                        <div class="col-5"><img src="/images/addidas.png" ></div>
+                        <div class="col-5"><img src="/images/oppo.png" ></div>
+                        <div class="col-5"><img src="/images/zara.png" ></div>
+                        <div class="col-5"><img src="/images/vans-3-logo.png" ></div>
+                        <div class="col-5"><img src="/images/godrej.png" ></div>
+                    </div>
+                </div>
+            </div>
+    <!-- -------------- End of About Section -------------- -->
+    <div class="scroll-to-top-btn" onclick="scrollToTop()" id="scrollToTopBtn">&#8679;</div>
+    <!-- ----------foooter--------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row1">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download the app for Android and iOS mobile phones</p>
+                    <div class="app-logo">
+                        <img src="/images/play.png">
+                        <img src="/images/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Bargain <span>Bazaar</span> </h3>
+                    <p>"Bargain Bazaar, your go-to e-commerce destination, offers a wide array of products at unbeatable prices, providing a delightful shopping experience for all."</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us:</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&#169; 2023 - Bargain Bazaar</p>
+        </div>
+    </div>
+    <!-- ------------js for menu ------------------ -->
+   
+    
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight = "0px";
+
+function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "400px";
+    }
+    else
+    {
+        MenuItems.style.maxHeight = "0px";
+    }
+}
+// Function to retrieve cart items from local storage
+function getCartFromLocalStorage() {
+  const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart'));
+  if (cartFromLocalStorage) {
+    cartItems.push(...cartFromLocalStorage);
+  }
+}
+
+// Function to save cart items to local storage
+function saveCartToLocalStorage() {
+  localStorage.setItem('cart', JSON.stringify(cartItems));
+}
+
+// Function to show the cart notification
+function showCartNotification() {
+  const cartNotification = document.getElementById('cartNotification');
+  cartNotification.style.display = 'block';
+
+  // Hide the notification after a few seconds (adjust the duration as needed)
+  setTimeout(function() {
+    cartNotification.style.display = 'none';
+  }, 1000); // 3000 milliseconds = 3 seconds
+}
+
+// Function to add the item to the cart
+function addToCart(productName, price, quantity) {
+  const existingItem = cartItems.find(item => item.name === productName);
+  if (existingItem) {
+    existingItem.quantity += quantity;
+  } else {
+    cartItems.push({
+      name: productName,
+      price: price,
+      quantity: quantity,
+    });
+  }
+  saveCartToLocalStorage();
+  showCartNotification();
+  // Update the cart display
+  displayCart();
+}
+
+// Function to remove an item from the cart
+function removeCartItem(productName) {
+  const itemIndex = cartItems.findIndex(item => item.name === productName);
+  if (itemIndex !== -1) {
+    cartItems.splice(itemIndex, 1);
+    saveCartToLocalStorage();
+    displayCart();
+  }
+}
+
+// Function to display the cart items and total value
+function displayCart() {
+  const cartList = document.getElementById('cart-items');
+  const totalValueElement = document.getElementById('totalValue');
+  cartList.innerHTML = '';
+  let totalValue = 0;
+
+  cartItems.forEach(item => {
+    const cartItem = document.createElement('li');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+      <span>${item.name} x ${item.quantity}</span>
+      <span>RS. ${item.price * item.quantity}</span>
+      <span class="cross-symbol" onclick="removeCartItem('${item.name}')">&#10006;</span>
+    `;
+
+    cartList.appendChild(cartItem);
+
+    totalValue += item.price * item.quantity;
+  });
+
+  totalValueElement.textContent = `RS. ${totalValue}`;
+}
+
+// Function to toggle the cart display
+function toggleCart() {
+  const cartWrapper = document.getElementById('cartWrapper');
+  cartWrapper.classList.toggle('show-cart');
+
+  // Update the cart display when the cart is shown
+  if (cartWrapper.classList.contains('show-cart')) {
+    displayCart();
+  }
+}
+
+function closeCart() {
+  const cartWrapper = document.getElementById('cartWrapper');
+  cartWrapper.classList.remove('show-cart');
+}
+
+// Initialize cart on page load
+const cartItems = [];
+document.addEventListener('DOMContentLoaded', () => {
+  getCartFromLocalStorage();
+  displayCart();
+});
+// Function to scroll to the top of the page
+function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Function to toggle the visibility of the scroll-to-top button
+        function toggleScrollToTopButton() {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 100) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        }
+
+        // Event listener to check scroll position and toggle button visibility
+        window.addEventListener('scroll', toggleScrollToTopButton);
+</script>
+</body>
+</html>

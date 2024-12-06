@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQYJP5T5GQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KQYJP5T5GQ');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account-Bargain | Bazaar </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<script src="script.js"></script>
+</head>
+<body>
+
+    <!--------------header start---------- -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+               <div class="logo">
+                <h1>BARGAIN <span>BAZAAR</span></h1>
+               </div>
+              <nav>
+               <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="products.html">Products</a></li>
+                 <li><a href="about.html">About </a></li>
+                 <li><a href="contact.html">Contact</a></li>
+                 <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <img src="/images/cart.png" width="30px" height="30px" class="cart" onclick="toggleCart()">
+              <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+           
+    </div>
+    </div>
+  
+
+ <!------------------- End of header ------------------>
+ <!-- Cart section -->
+<div class="cart-wrapper" id="cartWrapper">
+    <div class="cart-container" id="cartContainer">
+      <h2>Cart</h2>
+      <ul id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </ul>
+      <div class="cart-total">
+        <p>Total:</p>
+        <span id="totalValue">RS. 0</span>
+      </div>
+      <button class="btn btn-checkout">Checkout</button>
+      <button class="btn btn-close" onclick="closeCart()">Close</button> <!-- Add the close button -->
+    </div>
+  </div>
+  <div class="cart-notification" id="cartNotification">
+    Item added to cart!
+  </div>
+<!-- 
+  ----------------------end of cart section------------------ -->
+<!-- ------------------account------------------- -->
+   <div class="account-page">
+   <div class="container">
+    <div class="row">
+        <div class="left">
+            <h1>The best <span>Shopping </span> Experience!!</h1>
+            <p>Discover Unbeatable Deals at Bargain Bazaar - Where Savings Come to Life!</p>
+            <p>"Shop Smart, Save Big -Bargain Bazaar, Your Ultimate Savings Destination!"</p>
+            <a href="products.html" class="btn">Explore Now &#10132;</a>
+        </div>
+        <div class="right">
+            <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indicator">
+                </div>
+
+                <form id="loginform" netlify>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Login</button><br>
+                    <a href="">Forgot Password</a>
+                </form>
+                <form id="regform" netlify>
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Enter Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Register</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="scroll-to-top-btn" onclick="scrollToTop()" id="scrollToTopBtn">&#8679;</div>
+<!-- ----------foooter--------------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row1">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Dowload app for android and ios mobile phones</p>
+                <div class="app-logo">
+                    <img src="/images/play.png" >
+                    <img src="/images/appstore.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h3>Bargain <span>Bazaar</span> </h3>
+                <p>"Bargain Bazaar, your go-to ecommerce destination, <br> offers a wide array of products at unbeatable prices,<br> providing a delightful shopping experience for all."</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupens</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us:</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&#169; 2023 - Bargain Bazaar</p>
+    </div>
+</div>
+<!-- ------------js for menu ------------------ -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight = "0px";
+
+function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "400px";
+    }
+    else
+    {
+        MenuItems.style.maxHeight = "0px";
+    }
+}
+</script>
+
+<!-- ----------------js for login------------------- -->
+<script>
+ var loginform = document.getElementById("loginform");
+ var regform = document.getElementById("regform");
+ var indicator = document.getElementById("indicator");
+
+
+function register(){
+    regform.style.transform = "translateX(0px)";
+    loginform.style.transform = "translateX(0px)";
+    indicator.style.transform = "translateX(120px)";
+}
+function login(){
+    regform.style.transform = "translateX(300px)";
+    loginform.style.transform = "translateX(300px)";
+    indicator.style.transform = "translateX(0px)";
+}
+
+// Function to retrieve cart items from local storage
+function getCartFromLocalStorage() {
+  const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart'));
+  if (cartFromLocalStorage) {
+    cartItems.push(...cartFromLocalStorage);
+  }
+}
+
+// Function to save cart items to local storage
+function saveCartToLocalStorage() {
+  localStorage.setItem('cart', JSON.stringify(cartItems));
+}
+
+// Function to show the cart notification
+function showCartNotification() {
+  const cartNotification = document.getElementById('cartNotification');
+  cartNotification.style.display = 'block';
+
+  // Hide the notification after a few seconds (adjust the duration as needed)
+  setTimeout(function() {
+    cartNotification.style.display = 'none';
+  }, 1000); // 3000 milliseconds = 3 seconds
+}
+
+// Function to add the item to the cart
+function addToCart(productName, price, quantity) {
+  const existingItem = cartItems.find(item => item.name === productName);
+  if (existingItem) {
+    existingItem.quantity += quantity;
+  } else {
+    cartItems.push({
+      name: productName,
+      price: price,
+      quantity: quantity,
+    });
+  }
+  saveCartToLocalStorage();
+  showCartNotification();
+  // Update the cart display
+  displayCart();
+}
+
+// Function to remove an item from the cart
+function removeCartItem(productName) {
+  const itemIndex = cartItems.findIndex(item => item.name === productName);
+  if (itemIndex !== -1) {
+    cartItems.splice(itemIndex, 1);
+    saveCartToLocalStorage();
+    displayCart();
+  }
+}
+
+// Function to display the cart items and total value
+function displayCart() {
+  const cartList = document.getElementById('cart-items');
+  const totalValueElement = document.getElementById('totalValue');
+  cartList.innerHTML = '';
+  let totalValue = 0;
+
+  cartItems.forEach(item => {
+    const cartItem = document.createElement('li');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+      <span>${item.name} x ${item.quantity}</span>
+      <span>RS. ${item.price * item.quantity}</span>
+      <span class="cross-symbol" onclick="removeCartItem('${item.name}')">&#10006;</span>
+    `;
+
+    cartList.appendChild(cartItem);
+
+    totalValue += item.price * item.quantity;
+  });
+
+  totalValueElement.textContent = `RS. ${totalValue}`;
+}
+
+// Function to toggle the cart display
+function toggleCart() {
+  const cartWrapper = document.getElementById('cartWrapper');
+  cartWrapper.classList.toggle('show-cart');
+
+  // Update the cart display when the cart is shown
+  if (cartWrapper.classList.contains('show-cart')) {
+    displayCart();
+  }
+}
+
+function closeCart() {
+  const cartWrapper = document.getElementById('cartWrapper');
+  cartWrapper.classList.remove('show-cart');
+}
+
+// Initialize cart on page load
+const cartItems = [];
+document.addEventListener('DOMContentLoaded', () => {
+  getCartFromLocalStorage();
+  displayCart();
+});
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Function to toggle the visibility of the scroll-to-top button
+        function toggleScrollToTopButton() {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 100) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        }
+
+        // Event listener to check scroll position and toggle button visibility
+        window.addEventListener('scroll', toggleScrollToTopButton);
+
+</script>
+
+
+</body>
+</html>
